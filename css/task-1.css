@@ -1,0 +1,40 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.item {
+  display: block;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  padding: 16px;
+  margin: 24px;
+  width: 392px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
