@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 label {
   display: flex;
   flex-direction: column;
@@ -14,6 +18,26 @@ input {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  outline: none;
+  padding: 8px 0 8px 16px;
+
+  transition: border 300ms ease;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+input:focus,
+input:active {
+  border: 1px solid #808080;
 }
 
 .login-form {
@@ -44,4 +68,10 @@ input {
   background: #4e75ff;
   border: none;
   display: block;
+
+  transition: background-color 300ms ease;
+}
+
+.submit-btn:hover {
+  background-color: #6c8cff;
 }
