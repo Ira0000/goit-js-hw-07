@@ -17,14 +17,11 @@ function createBoxes() {
   } else {
     const boxesDiv = document.querySelector('.boxes');
     boxesDiv.innerHTML = '';
-    let boxWidth = 30;
-    let boxHeight = 30;
+    let size = 30;
     let newBox = '';
     for (let i = 0; i < inputValue; i += 1) {
-      const color = getRandomHexColor();
-      newBox += `<div class="new-box" style="background-color: ${color}; width: ${boxWidth}px; height: ${boxHeight}px"></div>`;
-      boxWidth += 10;
-      boxHeight += 10;
+      newBox += `<div class="new-box" style="background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px"></div>`;
+      size += 10;
     }
     boxesDiv.insertAdjacentHTML('beforeend', newBox);
   }
